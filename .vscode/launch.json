@@ -1,0 +1,36 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch Program(development)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch Program(production)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "args": ["task"],
+      "name": "Gulp task",
+      "program": "${workspaceFolder}/node_modules/gulp/bin/gulp.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    }
+  ]
+}
